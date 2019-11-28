@@ -31,10 +31,10 @@ SECRET_KEY = 'i!mgftbx)r@$52yw&(_&21u-n)4#wzpfy*gv8jj^du=6#d2fa4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED_HOSTS = [os.environ.get('HOSTNAME'),
-                 'localhost',
-                 '8080-a8319c88-c706-466e-bdbd-af0ab573d9e1.ws-eu01.gitpod.io']
-
+ALLOWED_HOSTS = [os.environ.get('HOSTNAME_GITPOD'),
+                 os.environ.get('HOSTNAME'),
+                 'localhost']
+                 
 
 # Application definition
 
